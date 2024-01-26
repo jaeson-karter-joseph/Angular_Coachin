@@ -4,11 +4,12 @@ import { ExampleComponent } from './components/example/example.component';
 import { ServiceOneComponent } from './components/servicesComponents/service-one/service-one.component';
 import { ServicetwoComponent } from './components/servicesComponents/servicetwo/servicetwo.component';
 import { RouteParamsComponent } from './route-params/route-params.component';
+import { FormsComponent } from './forms/forms.component';
 
 export const routes: Routes = [
     {
-        path: 'parentChild',
-        component: ParentComponent,
+        path: 'forms',
+        component: FormsComponent,
     },
     {
         path: 'pipes',
