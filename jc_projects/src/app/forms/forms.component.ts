@@ -17,7 +17,7 @@ export class FormsComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = new FormGroup({
-      Username: new FormControl<string | null>('', [Validators.required, Validators.minLength(5)]),
+      Username: new FormControl<string | null>('', [Validators.required, Validators.minLength(4)]),
       Email: new FormControl<string | null>('', [Validators.required, Validators.email]),
 
     })
@@ -25,7 +25,7 @@ export class FormsComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.form.valid)
+    console.log(this.form.value)
   }
 
 }
