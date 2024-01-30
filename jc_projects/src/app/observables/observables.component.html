@@ -1,0 +1,21 @@
+<div class="grid">
+    <div class="col-12">
+        <div class="text-center pb-1 border-round-sm bg-blue-300 text-2xl font-bold">
+            <h1>Lets Learn Observables Under a Minute</h1>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="text-center p-3 border-round-sm bg-primary font-bold">
+
+            <button (click)="getdata()"
+                class="bg-black-alpha-90 border-primary-500 px-3 py-2 text-base border-1 border-solid border-round cursor-pointer transition-all transition-duration-200 hover:bg-primary-600 hover:border-primary-600 active:bg-primary-700 active:border-primary-700">Fetch
+                Data</button>
+        </div>
+    </div>
+    <div *ngIf="isLoading" class="col-12">
+        <div class="text-center p-3 border-round-sm bg-primary font-bold">Loading</div>
+    </div>
+    <div *ngIf="Data" class="col-12">
+        <div class="text-center p-3 border-round-sm bg-primary font-bold">{{Data}}</div>
+    </div>
+</div>
