@@ -6,6 +6,9 @@ import { ServicetwoComponent } from './components/servicesComponents/servicetwo/
 import { RouteParamsComponent } from './route-params/route-params.component';
 import { FormsComponent } from './forms/forms.component';
 import { ObservablesComponent } from './observables/observables.component';
+import { BehaviorSubject } from 'rxjs';
+import { BsOneViewComponent } from './observables/bs-one-view/bs-one-view.component';
+import { BsTwoViewComponent } from './observables/bs-two-view/bs-two-view.component';
 
 export const routes: Routes = [
     {
@@ -29,7 +32,15 @@ export const routes: Routes = [
         component: RouteParamsComponent
     },
     {
-        path:'observable',
-        component:ObservablesComponent
+        path: 'observable',
+        component: ObservablesComponent
+    },
+    {
+        path: 'behaviorSubjectOne',
+        component: BsOneViewComponent
+    },
+    {
+        path: 'behaviorSubjectTwo',
+        component: BsTwoViewComponent
     }
 ];
