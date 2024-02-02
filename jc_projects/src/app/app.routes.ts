@@ -9,6 +9,7 @@ import { ObservablesComponent } from './observables/observables.component';
 import { BehaviorSubject } from 'rxjs';
 import { BsOneViewComponent } from './observables/bs-one-view/bs-one-view.component';
 import { BsTwoViewComponent } from './observables/bs-two-view/bs-two-view.component';
+import { CSSBackDropComponent } from './components/CSS/cssback-drop/cssback-drop.component';
 
 export const routes: Routes = [
     {
@@ -42,5 +43,9 @@ export const routes: Routes = [
     {
         path: 'behaviorSubjectTwo',
         component: BsTwoViewComponent
+    },
+    {
+        path: 'cssBackDrop',
+        component: CSSBackDropComponent
     }
 ];
